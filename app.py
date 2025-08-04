@@ -37,4 +37,5 @@ def scrape_books():
     return render_template('index.html', books=df.to_html(classes='table table-striped', index=False))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+
+    app.run(debug=True, port=5000, host=0.0.0.0)
